@@ -1,0 +1,8 @@
+.c-icon__arrow {
+  width: 20px;
+  height: 20px;
+  @include media-breakpoint-up(md) {
+    width: 24px;
+    height: 24px;
+  }
+}

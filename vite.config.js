@@ -49,6 +49,7 @@ export default defineConfig({
           ])
       ),
     },
+    cssMinify: false,
     outDir: 'dist',
   },
 });

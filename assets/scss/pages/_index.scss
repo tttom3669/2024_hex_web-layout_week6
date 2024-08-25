@@ -1,3 +1,170 @@
-.index-title {
-  font-size: 100px;
+.index {
+  &__banner {
+    height: calc(100dvh - $header-height-mobile);
+    @include media-breakpoint-up(md) {
+      height: calc(100dvh - $header-height);
+    }
+    &-bg {
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner-sm.png?raw=true);
+      @include media-breakpoint-up(md) {
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner.png?raw=true);
+      }
+    }
+  }
+
+  &__theme {
+    position: relative;
+    display: block;
+    border-radius: 20px 0px 20px 0px;
+    overflow: hidden;
+    picture {
+      position: relative;
+      z-index: 0;
+    }
+    &--title {
+      @include position-middle;
+      color: $white;
+      z-index: 1;
+
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0.1em;
+      @include media-breakpoint-up(md) {
+        font-size: 20px;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+.swiper-article {
+  width: 100%;
+  overflow: visible;
+  @include media-breakpoint-up(md) {
+    overflow: hidden;
+  }
+}
+
+.cus-swiper {
+  &-btn-next,
+  &-btn-prev,
+  &-pagination {
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    color: $neutral-300;
+    span {
+      color: $neutral-500;
+    }
+  }
+  &-btn-next,
+  &-btn-prev {
+    width: initial;
+    height: initial;
+    margin: 0;
+    border-radius: 100px;
+    padding: 4px 16px;
+    border: 1px solid $neutral-400;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+    &::after {
+      content: '';
+    }
+  }
+}
+
+.ubstribe-bg-2 {
+  bottom: -8px;
+  right: -48px;
+  @include media-breakpoint-up(lg) {
+    right: -32px;
+  }
+}
+
+.section__popular-theme {
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: $neutral-600;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 16px 16px 16px 16px;
+    &::before {
+      display: block;
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $neutral-600;
+    }
+    &.active {
+      color: $neutral-600;
+      background-color: $accent-100;
+      border-radius: 4px;
+    }
+  }
+}
+
+.section__life {
+  &-title {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+
+    @include media-breakpoint-up(md) {
+      font-size: 52px;
+      line-height: 1.4369;
+    }
+  }
+  &-img {
+    aspect-ratio: 351/ 192;
+    @include media-breakpoint-up(md) {
+      aspect-ratio: 416/ 192;
+    }
+  }
+}
+
+.swiper-life {
+  .swiper-wrapper {
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+}
+
+.section__project {
+  &-badge {
+    left: 16px;
+    top: -16px;
+  }
+  &-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      359.16deg,
+      #212529 0.73%,
+      rgba(33, 37, 41, 0.05) 99.27%
+    );
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    padding: 12px;
+    color: $white;
+  }
 }

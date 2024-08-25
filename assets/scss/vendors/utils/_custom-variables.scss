@@ -1,0 +1,163 @@
+// ============ colors ============
+
+$primary-100: #fffdf5;
+$primary-200: #fffbe5;
+$primary-300: #e8e3da;
+$primary-400: #6e6b67;
+$accent-100: #e0efde;
+$accent-200: #569573;
+$accent-300: #406c55;
+$white: #ffffff;
+$neutral-100: #f8f9fa;
+$neutral-200: #dee2e6;
+$neutral-300: #adb5bd;
+$neutral-400: #6c757d;
+$neutral-500: #343a40;
+$neutral-600: #212529;
+$info: #4a72ff;
+$success: #2cc585;
+$warning: #ffb054;
+$danger: #d65f5f;
+
+$custom-colors: (
+  'primary-100': $primary-100,
+  'primary-200': $primary-200,
+  'primary-300': $primary-300,
+  'primary-400': $primary-400,
+  'accent-100': $accent-100,
+  'accent-200': $accent-200,
+  'accent-300': $accent-300,
+  'white': $white,
+  'neutral-100': $neutral-100,
+  'neutral-200': $neutral-200,
+  'neutral-300': $neutral-300,
+  'neutral-400': $neutral-400,
+  'neutral-500': $neutral-500,
+  'neutral-600': $neutral-600,
+  'info': $info,
+  'success': $success,
+  'warning': $warning,
+  'danger': $danger,
+);
+
+// ============ #colors ============
+
+// ============ Typography ============
+
+// ------ font-size ------
+$font-size-base: 1rem !default;
+
+$font-sizes: (
+  h1: $font-size-base * 2.5,
+  // 40px
+  h2: $font-size-base * 2,
+  // 32px
+  h3: $font-size-base * 1.75,
+  // 28px
+  h4: $font-size-base * 1.5,
+  // 24px
+  h5: $font-size-base * 1.25,
+  // 20px
+  h6: $font-size-base,
+  3\.5: $font-size-base * 0.875,
+  // 14px
+  3: $font-size-base * 0.75,
+  //  12px
+) !default;
+// ------ #font-size ------
+
+// ------ font-weight ------
+
+$font-weight-base: 600 !default;
+$headings-font-weight: 900 !default;
+$headings-margin-bottom: 0 !default;
+
+// ------ #font-weight ------
+
+$font-family-sans-serif: 'Newsreader', 'Noto Serif TC', system-ui, -apple-system,
+  'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial,
+  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  'Noto Color Emoji' !default;
+
+// ============ #Typography ============
+
+// Paragraphs
+$paragraph-margin-bottom: 0 !default;
+
+// ============ Spacing ============
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  // 4px
+  2: $spacer * 0.5,
+  // 8px
+  2\.5: $spacer * 0.625,
+  // 10px
+  3: $spacer * 0.75,
+  // 12px
+  4: $spacer * 1,
+  5: $spacer * 1.25,
+  // 20px
+  6: $spacer * 1.5,
+  // 24px
+  8: $spacer * 2.25,
+  // 36px
+  10: $spacer * 2.5,
+  // 40px
+  12: $spacer * 3,
+  // 48px
+  12\.5: $spacer * 3.125,
+  // 50px
+  15: $spacer * 3.75,
+  // 60px
+  20: $spacer * 5,
+  // 80px
+  25: $spacer * 6.25,
+  // 100px
+) !default;
+
+// ============ #Spacing ============
+
+// ============ Components ============
+
+$focus-ring-opacity: 0.25 !default;
+$focus-ring-color: rgba($accent-200, $focus-ring-opacity) !default;
+
+// ============ #Components ============
+
+// ============ links ============
+$link-color: $neutral-500 !default;
+$link-shade-percentage: 20% !default;
+$link-hover-color: shift-color($accent-300, $link-shade-percentage) !default;
+$link-decoration: none !default;
+
+// ============ #links ============
+
+// ============ body ============
+$body-bg: $primary-100 !default;
+$body-color: $neutral-500 !default;
+
+// ============ #body ============
+
+// ============ button ============
+$btn-line-height: 1.2 !default;
+$btn-padding-y: 16px !default;
+$btn-padding-x: 24px !default;
+$btn-border-radius: 100px !default;
+// ============ #button ============
+
+// ============ Options ============
+$enable-rfs: false !default;
+// ============ # Options ============
+
+// ============ Z-index master list ============
+$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+) !default;
+// ============ # Z-index master list============
