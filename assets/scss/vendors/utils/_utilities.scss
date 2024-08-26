@@ -215,9 +215,12 @@ $utilities: map-merge(
     // scss-docs-start utils-sizing
     'width':
       (
+        responsive: true,
+        // cus*
         property: width,
         class: w,
         values: (
+          px: 1px,
           25: 25%,
           50: 50%,
           75: 75%,
@@ -247,6 +250,8 @@ $utilities: map-merge(
       ),
     ),
     'height': (
+      responsive: true,
+      // cus*
       property: height,
       class: h,
       values: (
@@ -289,6 +294,7 @@ $utilities: map-merge(
         property: flex,
         values: (
           fill: 1 1 auto,
+          none: 0 0 auto,
         ),
       ),
     'flex-direction': (

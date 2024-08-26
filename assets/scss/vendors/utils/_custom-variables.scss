@@ -14,6 +14,8 @@ $neutral-300: #adb5bd;
 $neutral-400: #6c757d;
 $neutral-500: #343a40;
 $neutral-600: #212529;
+$neutral-700: #09090b;
+
 $info: #4a72ff;
 $success: #2cc585;
 $warning: #ffb054;
@@ -34,6 +36,7 @@ $custom-colors: (
   'neutral-400': $neutral-400,
   'neutral-500': $neutral-500,
   'neutral-600': $neutral-600,
+  'neutral-700': $neutral-700,
   'info': $info,
   'success': $success,
   'warning': $warning,
@@ -74,6 +77,8 @@ $headings-margin-bottom: 0 !default;
 
 // ------ #font-weight ------
 
+$line-height-sm: 1.2 !default;
+
 $font-family-sans-serif: 'Newsreader', 'Noto Serif TC', system-ui, -apple-system,
   'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial,
   sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
@@ -91,6 +96,8 @@ $spacers: (
   0: 0,
   1: $spacer * 0.25,
   // 4px
+  1\.5: $spacer * 0.375,
+  // 6px
   2: $spacer * 0.5,
   // 8px
   2\.5: $spacer * 0.625,
@@ -102,6 +109,8 @@ $spacers: (
   // 20px
   6: $spacer * 1.5,
   // 24px
+  7\.5: $spacer * 1.875,
+  // 30px
   8: $spacer * 2.25,
   // 36px
   10: $spacer * 2.5,
@@ -112,6 +121,8 @@ $spacers: (
   // 50px
   15: $spacer * 3.75,
   // 60px
+  18: $spacer * 4.5,
+  // 72px
   20: $spacer * 5,
   // 80px
   25: $spacer * 6.25,

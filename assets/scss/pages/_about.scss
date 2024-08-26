@@ -1,0 +1,22 @@
+.about-banner {
+  aspect-ratio: 375/240;
+  @include media-breakpoint-up(md) {
+    aspect-ratio: 1296/454;
+  }
+}
+
+.section__year {
+  &-content {
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      width: 67.74%;
+    }
+  }
+}
+
+.year-title {
+  width: auto;
+  @include media-breakpoint-up(lg) {
+    width: 48px;
+  }
+}
